@@ -1,10 +1,11 @@
 import sys
+import os
 
-project_home = u'/home/parashar/pygenome_project/'
+project_home = os.path.dirname(os.getcwd())
 if project_home not in sys.path:
     sys.path = [project_home] + sys.path
 
 from pygenome import app
 
 if __name__== "__main__":
-    app.run()
+    app.run(debug=True)

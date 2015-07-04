@@ -1,5 +1,7 @@
-from wtforms import Form, TextField, PasswordField, validators
+from wtforms import StringField, PasswordField
+from flask_wtf import Form
 
 class Loginform(Form):
-    email = TextField('Email Address', [validators.Length(min=6, max=35)])
-    password = PasswordField('Password', [validators.Required()])
+    username = StringField('User Name')
+    email = StringField('Email Address')
+    password = PasswordField('Password')

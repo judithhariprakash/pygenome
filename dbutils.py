@@ -12,7 +12,8 @@ def queryEntry(un):
         return query
     except:
         return False
-    
+
+
 def addEntry(un, pwd):
     if queryEntry(un) is False:
         new_credential = Credentials(userName=un, password=pwd)
@@ -28,7 +29,8 @@ def showAllusers():
     for i in query:
         users.append(str(i.userName))
     return users
-    
+
+
 def delUser(un):
     query = queryEntry(un)
     if query is not False:
@@ -76,4 +78,5 @@ if __name__ == "__main__":
             else:
                 print "Poda naye!"
     else:
-        print "Username Incorrect!"
+        print "\n Username Incorrect!"
+
