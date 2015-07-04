@@ -1,2 +1,6 @@
-views.pyc
 __init__.pyc
+views.pyc
+dbutils.pyc
+forms.pyc
+models.pyc
+peedith.db-journal
